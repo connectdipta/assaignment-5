@@ -1,4 +1,4 @@
-//Add History
+//Add History in Array
 const callHistory = [];
 
 //Call Button
@@ -357,4 +357,97 @@ document.getElementById("call-btn9").addEventListener("click", function () {
         const div1=div.cloneNode(true);
     callHistoryContainer.appendChild(div);
     callHistoryContainer1.appendChild(div1);
+});
+
+// Heart
+document.getElementById("heart1").addEventListener("click", function () {
+  const heartNumber = document.getElementById("heart-show").innerText;
+  let number = parseInt(heartNumber);
+  number = number + 1;
+
+  document.getElementById("heart-show").innerText = number;
+});
+
+document.getElementById("heart2").addEventListener("click", function () {
+  const heartNumber = document.getElementById("heart-show").innerText;
+  let number = parseInt(heartNumber);
+  number = number + 1;
+
+  document.getElementById("heart-show").innerText = number;
+});
+
+document.getElementById("heart3").addEventListener("click", function () {
+  const heartNumber = document.getElementById("heart-show").innerText;
+  let number = parseInt(heartNumber);
+  number = number + 1;
+
+  document.getElementById("heart-show").innerText = number;
+});
+
+document.getElementById("heart4").addEventListener("click", function () {
+  const heartNumber = document.getElementById("heart-show").innerText;
+  let number = parseInt(heartNumber);
+  number = number + 1;
+
+  document.getElementById("heart-show").innerText = number;
+});
+
+document.getElementById("heart5").addEventListener("click", function () {
+  const heartNumber = document.getElementById("heart-show").innerText;
+  let number = parseInt(heartNumber);
+  number = number + 1;
+
+  document.getElementById("heart-show").innerText = number;
+});
+
+document.getElementById("heart6").addEventListener("click", function () {
+  const heartNumber = document.getElementById("heart-show").innerText;
+  let number = parseInt(heartNumber);
+  number = number + 1;
+
+  document.getElementById("heart-show").innerText = number;
+});
+
+document.getElementById("heart7").addEventListener("click", function () {
+  const heartNumber = document.getElementById("heart-show").innerText;
+  let number = parseInt(heartNumber);
+  number = number + 1;
+
+  document.getElementById("heart-show").innerText = number;
+});
+
+document.getElementById("heart8").addEventListener("click", function () {
+  const heartNumber = document.getElementById("heart-show").innerText;
+  let number = parseInt(heartNumber);
+  number = number + 1;
+
+  document.getElementById("heart-show").innerText = number;
+});
+
+document.getElementById("heart9").addEventListener("click", function () {
+  const heartNumber = document.getElementById("heart-show").innerText;
+  let number = parseInt(heartNumber);
+  number = number + 1;
+
+  document.getElementById("heart-show").innerText = number;
+});
+
+// Clear Button
+document.getElementById('clear-btn').addEventListener('click',function () {
+    document.getElementById('callHistory-parent').innerText=' ';
+});
+document.getElementById('clear-btn1').addEventListener('click',function () {
+    document.getElementById('callHistory-parent1').innerText=' ';
+});
+
+// Copy Button
+document.querySelectorAll('.copy-btn').forEach(button =>{
+    button.addEventListener('click',(event)=>{
+        const clickedBtn=event.currentTarget;
+        const textToCopy=clickedBtn.dataset.copyText;
+        alert('Number Copied: '+textToCopy);
+        navigator.clipboard.writeText(textToCopy);
+        const nmb= document.getElementById('copy-show').innerText;
+        document.getElementById('copy-show').innerText=parseInt(nmb)+1;
+    });
 });
